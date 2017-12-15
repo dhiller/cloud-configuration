@@ -9,6 +9,7 @@ resource "cloudflare_record" "dhiller_cname" {
     value = "${var.cloudflare_cname_destination}."
     type = "CNAME"
     ttl = 300
+    proxied = true
 }
 
 resource "cloudflare_record" "dhiller_cname_www" {
@@ -17,6 +18,7 @@ resource "cloudflare_record" "dhiller_cname_www" {
     value = "${var.cloudflare_cname_destination}."
     type = "CNAME"
     ttl = 300
+    proxied = true
 }
 
 resource "cloudflare_record" "dhiller_mx_1" {

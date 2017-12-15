@@ -9,6 +9,7 @@ resource "cloudflare_record" "skyconqueror_cname" {
     value = "${var.cloudflare_cname_destination}"
     type = "CNAME"
     ttl = 300
+    proxied = true
 }
 
 resource "cloudflare_record" "skyconqueror_cname_www" {
@@ -17,6 +18,7 @@ resource "cloudflare_record" "skyconqueror_cname_www" {
     value = "${var.cloudflare_cname_destination}"
     type = "CNAME"
     ttl = 300
+    proxied = true
 }
 
 resource "cloudflare_record" "skyconqueror_cname_email" {
@@ -25,6 +27,7 @@ resource "cloudflare_record" "skyconqueror_cname_email" {
     value = "${var.cloudflare_mx_destination}"
     type = "CNAME"
     ttl = 300
+    proxied = true
 }
 
 resource "cloudflare_record" "skyconqueror_mx_a" {
