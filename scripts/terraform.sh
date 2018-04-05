@@ -19,6 +19,8 @@ function main {
     -var "cloudflare_email=$CLOUDFLARE_EMAIL" \
     -var "mailgun_skyconqueror_api_key=$MAILGUN_SKYCONQUEROR_API_KEY" \
     -var "mailgun_skyconqueror_smtp_password=$MAILGUN_SKYCONQUEROR_SMTP_PASSWORD" \
+    -var "mailgun_dhiller_api_key=$MAILGUN_DHILLER_API_KEY" \
+    -var "mailgun_dhiller_smtp_password=$MAILGUN_DHILLER_SMTP_PASSWORD" \
     "$@"
 }
 
